@@ -61,6 +61,12 @@ build CMakeFiles/Vector.dir/main.c.obj: C_COMPILER__Vector_Debug C$:/Users/Key/C
   OBJECT_DIR = CMakeFiles\Vector.dir
   OBJECT_FILE_DIR = CMakeFiles\Vector.dir
 
+build CMakeFiles/Vector.dir/vectorVoid.c.obj: C_COMPILER__Vector_Debug C$:/Users/Key/CLionProjects/Vectors/vectorVoid.c || cmake_object_order_depends_target_Vector
+  DEP_FILE = CMakeFiles\Vector.dir\vectorVoid.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\Vector.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vector.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Vector
@@ -69,7 +75,7 @@ build CMakeFiles/Vector.dir/main.c.obj: C_COMPILER__Vector_Debug C$:/Users/Key/C
 #############################################
 # Link the executable Vector.exe
 
-build Vector.exe: C_EXECUTABLE_LINKER__Vector_Debug CMakeFiles/Vector.dir/vector.c.obj CMakeFiles/Vector.dir/main.c.obj
+build Vector.exe: C_EXECUTABLE_LINKER__Vector_Debug CMakeFiles/Vector.dir/vector.c.obj CMakeFiles/Vector.dir/main.c.obj CMakeFiles/Vector.dir/vectorVoid.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Vector.dir

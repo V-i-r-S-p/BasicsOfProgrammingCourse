@@ -1,4 +1,5 @@
 #include "vector.h"
+#include "vectorVoid.h"
 
 void test() {
     test_pushBack_emptyVector();
@@ -12,6 +13,7 @@ void test() {
 
 int main() {
     test();
+    vectorVoid vv;
 
     return 0;
 }

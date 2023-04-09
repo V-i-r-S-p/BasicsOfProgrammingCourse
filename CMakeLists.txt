@@ -3,4 +3,4 @@ project(Vectors C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(Vector vector.c main.c)
+add_executable(Vector vector.c main.c vectorVoid.c)
