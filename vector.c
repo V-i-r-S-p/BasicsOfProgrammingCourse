@@ -1,5 +1,7 @@
 #include "vector.h"
 #include "stdio.h"
+#include "assert.h"
+
 
 vector createVector(size_t n){
     vector v;
@@ -53,9 +55,62 @@ void outputVector(vector v){
     printf("\n");
 }
 
-
-int main() {
-    vector v = createVector(SIZE_MAX);
-
-    return 0;
+bool isEmpty(vector *v){
+    return v->size == 0;
 }
+
+bool isFull(vector *v){
+    return v->size == v->capacity;
+}
+
+int getVectorValue(vector *v, size_t i){
+    return v->data[i];
+}
+
+void pushBack(vector *v, int x){
+    if (v->size == v->capacity){
+        reserve(v, v->capacity * 2);
+    }
+
+    v->data[(v->size)++] = x;
+}
+
+void test_pushBack_emptyVector(){
+    vector v = createVector(0);
+    pushBack(&v, 10);
+
+    assert(getVectorValue(&v, 0) == 10);
+    assert(v.capacity == 1);
+    assert(v.size == 1);
+}
+
+void test_pushBack_fullVector(){
+    vector v = createVector(5);
+    v.size = 5;
+    pushBack(&v, 10);
+
+    assert(getVectorValue(&v, 0) == 10);
+    assert(v.capacity == 10);
+    assert(v.size == 6);
+}
+
+void popBack(vector *v){
+    if (isEmpty(v)){
+        fprintf(stderr, "Trying delete from empty vector");
+        exit(1);
+    }
+
+    (v->size)--;
+}
+
+void test_popBack_notEmptyVector() {
+    vector v = createVector(0);
+    pushBack(&v, 10);
+
+    assert(v.size == 1);
+
+    popBack(&v);
+    assert(v.size == 0);
+    assert(v.capacity == 1);
+}
+

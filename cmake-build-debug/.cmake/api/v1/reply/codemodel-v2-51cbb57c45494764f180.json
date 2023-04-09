@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "Vectors",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,16 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Vectors::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Vectors-Debug-1859e611acd82fc25453.json",
-					"name" : "Vectors",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "vector.c::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-vector.c-Debug-ff4bd35baf0b2b403a77.json",
-					"name" : "vector.c",
+					"id" : "Vector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Vector-Debug-f50dea216fb74f039209.json",
+					"name" : "Vector",
 					"projectIndex" : 0
 				}
 			]

@@ -41,68 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Key/CLionProjects/Vectors/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Vectors
+# Object build statements for EXECUTABLE target Vector
 
 
 #############################################
-# Order-only phony target for Vectors
+# Order-only phony target for Vector
 
-build cmake_object_order_depends_target_Vectors: phony || CMakeFiles/Vectors.dir
+build cmake_object_order_depends_target_Vector: phony || CMakeFiles/Vector.dir
 
-build CMakeFiles/Vectors.dir/vector.c.obj: C_COMPILER__Vectors_Debug C$:/Users/Key/CLionProjects/Vectors/vector.c || cmake_object_order_depends_target_Vectors
-  DEP_FILE = CMakeFiles\Vectors.dir\vector.c.obj.d
+build CMakeFiles/Vector.dir/vector.c.obj: C_COMPILER__Vector_Debug C$:/Users/Key/CLionProjects/Vectors/vector.c || cmake_object_order_depends_target_Vector
+  DEP_FILE = CMakeFiles\Vector.dir\vector.c.obj.d
   FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\Vectors.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vectors.dir
+  OBJECT_DIR = CMakeFiles\Vector.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vector.dir
+
+build CMakeFiles/Vector.dir/main.c.obj: C_COMPILER__Vector_Debug C$:/Users/Key/CLionProjects/Vectors/main.c || cmake_object_order_depends_target_Vector
+  DEP_FILE = CMakeFiles\Vector.dir\main.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\Vector.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vector.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Vectors
+# Link build statements for EXECUTABLE target Vector
 
 
 #############################################
-# Link the executable Vectors.exe
+# Link the executable Vector.exe
 
-build Vectors.exe: C_EXECUTABLE_LINKER__Vectors_Debug CMakeFiles/Vectors.dir/vector.c.obj
+build Vector.exe: C_EXECUTABLE_LINKER__Vector_Debug CMakeFiles/Vector.dir/vector.c.obj CMakeFiles/Vector.dir/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Vectors.dir
+  OBJECT_DIR = CMakeFiles\Vector.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Vectors.exe
-  TARGET_IMPLIB = libVectors.dll.a
-  TARGET_PDB = Vectors.exe.dbg
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target vector.c
-
-
-#############################################
-# Order-only phony target for vector.c
-
-build cmake_object_order_depends_target_vector.c: phony || CMakeFiles/vector.c.dir
-
-build CMakeFiles/vector.c.dir/vector.c.obj: C_COMPILER__vector.2ec_Debug C$:/Users/Key/CLionProjects/Vectors/vector.c || cmake_object_order_depends_target_vector.c
-  DEP_FILE = CMakeFiles\vector.c.dir\vector.c.obj.d
-  FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\vector.c.dir
-  OBJECT_FILE_DIR = CMakeFiles\vector.c.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target vector.c
-
-
-#############################################
-# Link the static library libvector.c.a
-
-build libvector.c.a: C_STATIC_LIBRARY_LINKER__vector.2ec_Debug CMakeFiles/vector.c.dir/vector.c.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\vector.c.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = libvector.c.a
-  TARGET_PDB = vector.c.a.dbg
+  TARGET_FILE = Vector.exe
+  TARGET_IMPLIB = libVector.dll.a
+  TARGET_PDB = Vector.exe.dbg
 
 
 #############################################
@@ -130,9 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Vectors: phony Vectors.exe
-
-build vector.c: phony libvector.c.a
+build Vector: phony Vector.exe
 
 # =============================================================================
 # Folder targets.
@@ -142,7 +115,7 @@ build vector.c: phony libvector.c.a
 #############################################
 # Folder: C:/Users/Key/CLionProjects/Vectors/cmake-build-debug
 
-build all: phony Vectors.exe libvector.c.a
+build all: phony Vector.exe
 
 # =============================================================================
 # Built-in targets
