@@ -40,4 +40,18 @@ void popBack(vector *v);
 
 void test_popBack_notEmptyVector();
 
+int* atVector(vector *v, size_t index);
+
+int* back(vector *v);
+
+int* front(vector *v);
+
+void test_atVector_notEmptyVector();
+
+void test_atVector_requestToLastElement();
+
+void test_back_oneElementInVector();
+
+void test_front_oneElementInVector();
+
 #endif //VECTORS_VECTOR_H
