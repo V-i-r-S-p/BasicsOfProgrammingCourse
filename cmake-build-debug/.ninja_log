@@ -1,0 +1,12 @@
+# ninja log v5
+1	52	7027009030402752	CMakeFiles/Vectors.dir/vector.c.obj	29081ef160dc7630
+1	118	7027009222462597	build.ninja	e0c6cccf43c4edb0
+2	73	7027008869668213	CMakeFiles/Vectors.dir/main.c.obj	a5e5e4e4d52c0c13
+1	104	7027009222462597	build.ninja	e0c6cccf43c4edb0
+1	61	7027009223519768	Vectors.exe	17af698cd3e04d1d
+1	55	7027009281514180	CMakeFiles/Vectors.dir/vector.c.obj	29081ef160dc7630
+55	121	7027009282152512	Vectors.exe	17af698cd3e04d1d
+1	60	7027017575742030	CMakeFiles/Vectors.dir/vector.c.obj	29081ef160dc7630
+61	126	7027017576360373	Vectors.exe	17af698cd3e04d1d
+1	57	7027025268753159	CMakeFiles/Vectors.dir/vector.c.obj	29081ef160dc7630
+57	118	7027025269341582	Vectors.exe	17af698cd3e04d1d
